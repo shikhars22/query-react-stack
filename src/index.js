@@ -12,13 +12,14 @@ import {
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 // Create a client
-const queryClient = new QueryClient({
-	defaultOptions: {
-		queries: {
-			refetchOnWindowFocus: false,
-		},
-	},
-});
+const queryClient = new QueryClient();
+// {
+// defaultOptions: {
+// 	queries: {
+// 		refetchOnWindowFocus: false,
+// 	},
+// },
+// }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
